@@ -1,0 +1,149 @@
+// out: null
+
+.rem(@px){
+  font-size: @px/16px + 0rem;
+}
+
+.line-height(@px){
+  line-height: @px/16;
+}
+
+
+.min-height(@px){
+    min-height: @px/16px + 0rem;
+}
+
+.height(@px){
+    height: @px/16px + 0rem;
+}
+
+.max-height(@px){
+    max-height: @px/16px + 0rem;
+}
+
+.min-width(@px){
+    min-width: @px/16px + 0rem;
+}
+
+.max-width(@px){
+    max-width:@px/16px + 0rem;
+}
+
+.width(@px){
+    width: @px/16px + 0rem;
+}
+.dib-mid(){
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dib-top(){
+    display: inline-block;
+    vertical-align: top;
+}
+.rel() {
+    position: relative;
+}
+
+.square(@s:50px;@bgc: #ccc;) {
+    width: @s;
+    height: @s;
+    background-color: @bgc;
+}
+
+.circle(@s:50px; @bgc: #ccc;){
+    display: block;
+    width: @s;
+    height: @s;
+    border-radius: 50% 50%;
+    background-color: @bgc;
+    overflow: hidden;
+}
+
+.text-bold() {
+    font-weight: bold;
+}
+
+.display-centerer-XY(@posX:50%;@posY:50%){
+    position: absolute;
+    left: @posX;
+    top: @posY;
+    transform: translateX(50%);
+}
+
+.display-centerer-Y(@posY:50%){
+    position: absolute;
+    top: @posY;
+    transform: translateY(50%);
+}
+.display-centerer-X(@posX:50%){
+    position: absolute;
+    left: @posX;
+    transform: translateX(50%);
+}
+
+.display-centerer-Y(@posY:50%){
+    position: absolute;
+    top: @posY;
+    transform: translateY(50%);
+}
+
+.raleway(@font-weight:400){
+  font-family: 'Raleway',Tahoma, Geneva, sans-serif;
+  font-weight: @font-weight;
+}
+
+.montserrat(@font-weight:400) {
+  font-family: 'Montserrat','Trebuchet MS', Helvetica, sans-serif;
+  font-weight: @font-weight;
+}
+
+.roboto(@font-weight:400) {
+  font-family: 'Roboto',Arial, Helvetica, sans-serif;
+  font-weight: @font-weight;
+}
+
+.triangle-top(@borW: 30px; @borColor: #ccc; @posY:-59px;){
+    border: @borW solid transparent;
+    border-bottom: @borW solid @borColor;
+    top: @posY;
+}
+
+.triangle-bottom(@borW: 30px; @borColor: #ccc; @posY:-59px;){
+    border: @borW solid transparent;
+    border-top: @borW solid @borColor;
+    bottom: @posY;
+}
+
+.triangle-left(@borW: 30px; @borColor: #ccc; @posX:-59px;){
+    border: @borW solid transparent;
+    border-right: @borW solid @borColor;
+    right: @posX;
+}
+
+.triangle-right(@borW: 30px; @borColor: #ccc; @posX:-59px;){
+    border: @borW solid transparent;
+    border-left: @borW solid @borColor;
+    left: @posX;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
